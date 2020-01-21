@@ -1,4 +1,6 @@
 const cards = document.querySelectorAll(".memory-card");
+const flipCards = document.querySelectorAll(".flip-card");
+const match = document.querySelector(".match");
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -11,12 +13,20 @@ function flipCard() {
   this.classList.add("flip");
 
   if (!hasFlippedCard) {
+    flipCards[0].querySelector(".front-face").src = this.querySelector(
+      ".front-face"
+    ).src;
+    flipCards[0].classList.add("flip");
     hasFlippedCard = true;
     firstCard = this;
 
     return;
   }
 
+  flipCards[1].querySelector(".front-face").src = this.querySelector(
+    ".front-face"
+  ).src;
+  flipCards[1].classList.add("flip");
   secondCard = this;
   checkForMatch();
 }
@@ -30,8 +40,12 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-
-  resetBoard();
+  match.style.visibility = "visible";
+  setTimeout(() => {
+    flipCards[0].classList.remove("flip");
+    flipCards[1].classList.remove("flip");
+    resetBoard();
+  }, 1000);
 }
 
 function unflipCards() {
@@ -39,15 +53,18 @@ function unflipCards() {
 
   setTimeout(() => {
     firstCard.classList.remove("flip");
+    flipCards[0].classList.remove("flip");
     secondCard.classList.remove("flip");
+    flipCards[1].classList.remove("flip");
 
     resetBoard();
-  }, 1000);
+  }, 1500);
 }
 
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
+  match.style.visibility = "hidden";
 }
 
 (function shuffle() {

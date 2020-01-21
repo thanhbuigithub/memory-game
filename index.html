@@ -4,300 +4,332 @@
     <meta charset="UTF-8" />
 
     <title>Memory Game</title>
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="memory-game">
-      <div class="memory-card" data-name="Cau">
-        <img class="front-face" src="img/cau.jpg" alt="Cau" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Cau">
-        <img class="front-face" src="img/Cau.jpg" alt="Cau" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+    <div class="container-fluid">
+      <div class="row h-100">
+        <div
+          class="col-5 h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="match">
+            <h1>
+              <span>M</span>
+              <span>A</span>
+              <span>T</span>
+              <span>C</span>
+              <span>H</span>
+            </h1>
+          </div>
+          <div class="flip-card">
+            <img class="front-face" src="" />
+            <div class="back-face"><span class="order"></span></div>
+          </div>
+          <div class="flip-card">
+            <img class="front-face" src="" />
+            <div class="back-face"><span class="order"></span></div>
+          </div>
+        </div>
+        <div class="col-7">
+          <section class="memory-game">
+            <div class="memory-card" data-name="Cau">
+              <img class="front-face" src="img/cau.jpg" alt="Cau" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Cau">
+              <img class="front-face" src="img/Cau.jpg" alt="Cau" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Chan">
-        <img class="front-face" src="img/Chan.jpg" alt="Chan" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Chan">
-        <img class="front-face" src="img/Chan.jpg" alt="Chan" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Chan">
+              <img class="front-face" src="img/Chan.jpg" alt="Chan" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Chan">
+              <img class="front-face" src="img/Chan.jpg" alt="Chan" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Chi">
-        <img class="front-face" src="img/Chi.jpg" alt="Chi" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Chi">
-        <img class="front-face" src="img/Chi.jpg" alt="Chi" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Chi">
+              <img class="front-face" src="img/Chi.jpg" alt="Chi" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Chi">
+              <img class="front-face" src="img/Chi.jpg" alt="Chi" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Diem">
-        <img class="front-face" src="img/Diem.jpg" alt="Diem" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Diem">
-        <img class="front-face" src="img/Diem.jpg" alt="Diem" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Diem">
+              <img class="front-face" src="img/Diem.jpg" alt="Diem" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Diem">
+              <img class="front-face" src="img/Diem.jpg" alt="Diem" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Han">
-        <img class="front-face" src="img/Han.jpg" alt="Han" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Han">
-        <img class="front-face" src="img/Han.jpg" alt="Han" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Han">
+              <img class="front-face" src="img/Han.jpg" alt="Han" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Han">
+              <img class="front-face" src="img/Han.jpg" alt="Han" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Hoang">
-        <img class="front-face" src="img/Hoang.jpg" alt="Hoang" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Hoang">
-        <img class="front-face" src="img/Hoang.jpg" alt="Hoang" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Hoang">
+              <img class="front-face" src="img/Hoang.jpg" alt="Hoang" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Hoang">
+              <img class="front-face" src="img/Hoang.jpg" alt="Hoang" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Linh">
-        <img class="front-face" src="img/Linh.jpg" alt="Linh" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Linh">
-        <img class="front-face" src="img/Linh.jpg" alt="Linh" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Linh">
+              <img class="front-face" src="img/Linh.jpg" alt="Linh" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Linh">
+              <img class="front-face" src="img/Linh.jpg" alt="Linh" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Loc">
-        <img class="front-face" src="img/Loc.jpg" alt="Loc" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Loc">
-        <img class="front-face" src="img/Loc.jpg" alt="Loc" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Loc">
+              <img class="front-face" src="img/Loc.jpg" alt="Loc" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Loc">
+              <img class="front-face" src="img/Loc.jpg" alt="Loc" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Ly">
-        <img class="front-face" src="img/Ly.jpg" alt="Ly" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Ly">
-        <img class="front-face" src="img/Ly.jpg" alt="Ly" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Ly">
+              <img class="front-face" src="img/Ly.jpg" alt="Ly" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Ly">
+              <img class="front-face" src="img/Ly.jpg" alt="Ly" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="My">
-        <img class="front-face" src="img/My.jpg" alt="My" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="My">
-        <img class="front-face" src="img/My.jpg" alt="My" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="My">
+              <img class="front-face" src="img/My.jpg" alt="My" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="My">
+              <img class="front-face" src="img/My.jpg" alt="My" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Ngan">
-        <img class="front-face" src="img/Ngan.jpg" alt="Ngan" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Ngan">
-        <img class="front-face" src="img/Ngan.jpg" alt="Ngan" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Ngan">
+              <img class="front-face" src="img/Ngan.jpg" alt="Ngan" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Ngan">
+              <img class="front-face" src="img/Ngan.jpg" alt="Ngan" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Ngoc">
-        <img class="front-face" src="img/Ngoc.jpg" alt="Ngoc" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Ngoc">
-        <img class="front-face" src="img/Ngoc.jpg" alt="Ngoc" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Ngoc">
+              <img class="front-face" src="img/Ngoc.jpg" alt="Ngoc" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Ngoc">
+              <img class="front-face" src="img/Ngoc.jpg" alt="Ngoc" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Phung">
-        <img class="front-face" src="img/Phung.jpg" alt="Phung" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Phung">
-        <img class="front-face" src="img/Phung.jpg" alt="Phung" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Phung">
+              <img class="front-face" src="img/Phung.jpg" alt="Phung" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Phung">
+              <img class="front-face" src="img/Phung.jpg" alt="Phung" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Phuong">
-        <img class="front-face" src="img/Phuong.jpg" alt="Phuong" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Phuong">
-        <img class="front-face" src="img/Phuong.jpg" alt="Phuong" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Phuong">
+              <img class="front-face" src="img/Phuong.jpg" alt="Phuong" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Phuong">
+              <img class="front-face" src="img/Phuong.jpg" alt="Phuong" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Quang">
-        <img class="front-face" src="img/Quang.jpg" alt="Quang" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Quang">
-        <img class="front-face" src="img/Quang.jpg" alt="Quang" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Quang">
+              <img class="front-face" src="img/Quang.jpg" alt="Quang" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Quang">
+              <img class="front-face" src="img/Quang.jpg" alt="Quang" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Quoc">
-        <img class="front-face" src="img/Quoc.jpg" alt="Quoc" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Quoc">
-        <img class="front-face" src="img/Quoc.jpg" alt="Quoc" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Quoc">
+              <img class="front-face" src="img/Quoc.jpg" alt="Quoc" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Quoc">
+              <img class="front-face" src="img/Quoc.jpg" alt="Quoc" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Thanh">
-        <img class="front-face" src="img/Thanh.jpg" alt="Thanh" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Thanh">
-        <img class="front-face" src="img/Thanh.jpg" alt="Thanh" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Thanh">
+              <img class="front-face" src="img/Thanh.jpg" alt="Thanh" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Thanh">
+              <img class="front-face" src="img/Thanh.jpg" alt="Thanh" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="That">
-        <img class="front-face" src="img/That.jpg" alt="That" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="That">
-        <img class="front-face" src="img/That.jpg" alt="That" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="That">
+              <img class="front-face" src="img/That.jpg" alt="That" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="That">
+              <img class="front-face" src="img/That.jpg" alt="That" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="The">
-        <img class="front-face" src="img/The.jpg" alt="The" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="The">
-        <img class="front-face" src="img/The.jpg" alt="The" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="The">
+              <img class="front-face" src="img/The.jpg" alt="The" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="The">
+              <img class="front-face" src="img/The.jpg" alt="The" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Thi">
-        <img class="front-face" src="img/Thi.jpg" alt="Thi" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Thi">
-        <img class="front-face" src="img/Thi.jpg" alt="Thi" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Thi">
+              <img class="front-face" src="img/Thi.jpg" alt="Thi" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Thi">
+              <img class="front-face" src="img/Thi.jpg" alt="Thi" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Thuy">
-        <img class="front-face" src="img/Thuy.jpg" alt="Thuy" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Thuy">
-        <img class="front-face" src="img/Thuy.jpg" alt="Thuy" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Thuy">
+              <img class="front-face" src="img/Thuy.jpg" alt="Thuy" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Thuy">
+              <img class="front-face" src="img/Thuy.jpg" alt="Thuy" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Tien">
-        <img class="front-face" src="img/Tien.jpg" alt="Tien" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Tien">
-        <img class="front-face" src="img/Tien.jpg" alt="Tien" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Tien">
+              <img class="front-face" src="img/Tien.jpg" alt="Tien" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Tien">
+              <img class="front-face" src="img/Tien.jpg" alt="Tien" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Tin">
-        <img class="front-face" src="img/Tin.jpg" alt="Tin" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Tin">
-        <img class="front-face" src="img/Tin.jpg" alt="Tin" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Tin">
+              <img class="front-face" src="img/Tin.jpg" alt="Tin" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Tin">
+              <img class="front-face" src="img/Tin.jpg" alt="Tin" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Tram">
-        <img class="front-face" src="img/Tram.jpg" alt="Tram" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Tram">
-        <img class="front-face" src="img/Tram.jpg" alt="Tram" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Tram">
+              <img class="front-face" src="img/Tram.jpg" alt="Tram" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Tram">
+              <img class="front-face" src="img/Tram.jpg" alt="Tram" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Truc">
-        <img class="front-face" src="img/Truc.jpg" alt="Truc" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Truc">
-        <img class="front-face" src="img/Truc.jpg" alt="Truc" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Truc">
+              <img class="front-face" src="img/Truc.jpg" alt="Truc" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Truc">
+              <img class="front-face" src="img/Truc.jpg" alt="Truc" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Tu">
-        <img class="front-face" src="img/Tu.jpg" alt="Tu" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Tu">
-        <img class="front-face" src="img/Tu.jpg" alt="Tu" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Tu">
+              <img class="front-face" src="img/Tu.jpg" alt="Tu" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Tu">
+              <img class="front-face" src="img/Tu.jpg" alt="Tu" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="TuongVy">
-        <img class="front-face" src="img/TuongVy.jpg" alt="TuongVy" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="TuongVy">
-        <img class="front-face" src="img/TuongVy.jpg" alt="TuongVy" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="TuongVy">
+              <img class="front-face" src="img/TuongVy.jpg" alt="TuongVy" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="TuongVy">
+              <img class="front-face" src="img/TuongVy.jpg" alt="TuongVy" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Tuyet">
-        <img class="front-face" src="img/Tuyet.jpg" alt="Tuyet" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Tuyet">
-        <img class="front-face" src="img/Tuyet.jpg" alt="Tuyet" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Tuyet">
+              <img class="front-face" src="img/Tuyet.jpg" alt="Tuyet" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Tuyet">
+              <img class="front-face" src="img/Tuyet.jpg" alt="Tuyet" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Van">
-        <img class="front-face" src="img/Van.jpg" alt="Van" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Van">
-        <img class="front-face" src="img/Van.jpg" alt="Van" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Van">
+              <img class="front-face" src="img/Van.jpg" alt="Van" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Van">
+              <img class="front-face" src="img/Van.jpg" alt="Van" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Viet">
-        <img class="front-face" src="img/Viet.jpg" alt="Viet" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Viet">
-        <img class="front-face" src="img/Viet.jpg" alt="Viet" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Viet">
+              <img class="front-face" src="img/Viet.jpg" alt="Viet" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Viet">
+              <img class="front-face" src="img/Viet.jpg" alt="Viet" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Vy">
-        <img class="front-face" src="img/Vy.jpg" alt="Vy" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-      <div class="memory-card" data-name="Vy">
-        <img class="front-face" src="img/Vy.jpg" alt="Vy" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
+            <div class="memory-card" data-name="Vy">
+              <img class="front-face" src="img/Vy.jpg" alt="Vy" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Vy">
+              <img class="front-face" src="img/Vy.jpg" alt="Vy" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
 
-      <div class="memory-card" data-name="Xuyen">
-        <img class="front-face" src="img/Xuyen.jpg" alt="Xuyen" />
-        <div class="back-face"><span class="order"></span></div>
+            <div class="memory-card" data-name="Xuyen">
+              <img class="front-face" src="img/Xuyen.jpg" alt="Xuyen" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+            <div class="memory-card" data-name="Xuyen">
+              <img class="front-face" src="img/Xuyen.jpg" alt="Xuyen" />
+              <div class="back-face"><span class="order"></span></div>
+            </div>
+          </section>
+        </div>
       </div>
-      <div class="memory-card" data-name="Xuyen">
-        <img class="front-face" src="img/Xuyen.jpg" alt="Xuyen" />
-        <div class="back-face"><span class="order"></span></div>
-      </div>
-    </section>
-
+    </div>
     <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   </body>
 </html>
