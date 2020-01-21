@@ -1,6 +1,7 @@
 const cards = document.querySelectorAll(".memory-card");
 const flipCards = document.querySelectorAll(".flip-card");
 const match = document.querySelector(".match");
+const timeFlipBack = 1500;
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -45,7 +46,7 @@ function disableCards() {
     flipCards[0].classList.remove("flip");
     flipCards[1].classList.remove("flip");
     resetBoard();
-  }, 1000);
+  }, timeFlipBack);
 }
 
 function unflipCards() {
@@ -58,7 +59,7 @@ function unflipCards() {
     flipCards[1].classList.remove("flip");
 
     resetBoard();
-  }, 1500);
+  }, timeFlipBack);
 }
 
 function resetBoard() {
